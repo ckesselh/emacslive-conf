@@ -37,3 +37,6 @@
   (interactive)
   (kill-new (thing-at-point 'sexp)))
 (define-key lisp-mode-shared-map [C-s-268632075] 'copy-sexp-at-point)
+
+;; Unbind some of the more confusing defaults that I typically never use
+(global-unset-key (kbd "C-z"))
