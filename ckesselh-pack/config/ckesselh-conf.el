@@ -1,4 +1,7 @@
-; Forcing show-paren-mode
+;; Install missing packages, if any
+(install-packs '(magit helm helm-git helm-ls-git))
+
+;; Forcing show-paren-mode
 (show-paren-mode t)
 (setq show-paren-style 'expression)
 
