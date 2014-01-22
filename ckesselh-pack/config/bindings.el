@@ -54,3 +54,8 @@
 
 ;; Unbind some of the more confusing defaults that I typically never use
 (global-unset-key (kbd "C-z"))
+
+;; Make sure that hitting <escape> <escape> <escape> (bound to
+;; keyboard-escape-quit, by default) out of sheer habit doesn't
+;; cause any windows to be closed or text to be deleted
+(define-key global-map (kbd "<escape> <escape> <escape>") 'keyboard-quit)
